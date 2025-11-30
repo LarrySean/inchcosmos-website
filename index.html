@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InchCosmos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: #888;
+            margin-bottom: 50px;
+        }
+        
+        .apps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+        
+        .app-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .app-desc {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .app-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 15px;
+            border: 1px solid #667eea;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        
+        .app-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            color: #555;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .app-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>InchCosmos</h1>
+        <p class="tagline">Independent App Developer</p>
+        
+        <div class="apps">
+            <div class="app-card">
+                <div class="app-icon">修</div>
+                <h2 class="app-name">KeepBar+</h2>
+                <p class="app-desc">A cultivation-themed habit tracking app. Master your habits, advance your realm.</p>
+                <div class="app-links">
+                    <a href="keepbar-plus/privacy.html">Privacy</a>
+                    <a href="keepbar-plus/terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        
+        <p class="footer">© 2025 InchCosmos. All rights reserved.</p>
+    </div>
+</body>
+</html>
