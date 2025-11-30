@@ -67,13 +67,15 @@
         .app-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 20px;
             margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em;
+            overflow: hidden;
+        }
+        
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .app-name {
@@ -133,7 +135,7 @@
         
         <div class="apps">
             <div class="app-card">
-                <div class="app-icon">修</div>
+                <div class="app-icon"><img src="favicon.png" alt="KeepBar+ Logo"></div>
                 <h2 class="app-name">KeepBar+</h2>
                 <p class="app-desc">A cultivation-themed habit tracking app. Master your habits, advance your realm.</p>
                 <div class="app-links">
